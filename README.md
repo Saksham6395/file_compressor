@@ -65,18 +65,31 @@ And yes, it’s all **written in C++**, from scratch, by hand, like true warrior
 ```bash
 filecompressor/
 ├── app/
-│   ├── src/main/java/com/example/filecompressor/
-│   │   ├── screen/
-│   │   │   ├── selection.kt
-│   │   │   ├── compress.kt
-│   │   │   ├── decompress.kt
-│   │   │   └── sharing.kt
-│   │   ├── viewmodel/
-│   │   └── utils/
+│   └── src/main/java/com/example/filecompressor/
+│       ├── navigation/           # Jetpack Navigation setup
+│       ├── screen/               # All Compose screens
+│       ├── viewmodel/            # ViewModels for state mgmt
+│       ├── utils/                # Helpers like sharedPref
+│       └── MainActivity.kt
+│
+├── compressor/                   # Native Huffman Compressor
 │   ├── cpp/
-│   │   ├── native-lib.cpp     # Huffman Compression/Decompression logic
-│   │   └── huffman.hpp        # Header definitions
-│   └── AndroidManifest.xml
+│   │   ├── compressor.cpp        # Entry point
+│   │   ├── encoder.cpp/.h        # Huffman logic
+│   │   └── CMakeLists.txt
+│   └── kotlin+java/
+│       └── com/example/compressor/NativeLib.kt
+│
+├── decompressor/                 # Native Huffman Decompressor
+│   ├── cpp/
+│   │   ├── decompressor.cpp
+│   │   ├── decoder.cpp/.h
+│   │   └── CMakeLists.txt
+│   └── kotlin+java/
+│       └── com/example/decompressor/NativeLib.kt
+
+
+
 🔩 How It Works (Under the Hood)
 Compression Flow:
 📂 User picks a file using system picker
@@ -141,14 +154,7 @@ Build the app
 
 Run it on a real device (file access needs real storage)
 
-🤖 Permissions Used
-xml
-Copy
-Edit
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 🙌 Author
 Saksham Samarth
 📍 ECE @ SVNIT
