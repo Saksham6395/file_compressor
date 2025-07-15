@@ -4,7 +4,7 @@ An Android app that compresses and decompresses `.txt` files using **Huffman Cod
 
 ---
 
-## 🚀 TL;DR  
+## 🚀  What’s This All About?
 - **DSA + Android + Native C++ = 🔥**
 - Compress large `.txt` files directly on your phone  
 - Share/download compressed files easily  
@@ -88,39 +88,41 @@ filecompressor/
 │   └── kotlin+java/
 │       └── com/example/decompressor/NativeLib.kt
 
+```
 
+## 🔩 How It Works (Under the Hood)
 
-🔩 How It Works (Under the Hood)
 Compression Flow:
-📂 User picks a file using system picker
+- User picks a file using system picker
 
-🧠 We grab the file descriptor (fd) — not the entire file content
+- We grab the file descriptor (fd) — not the entire file content
 
-⚙️ Pass the fd to native C++ using JNI
+- Pass the fd to native C++ using JNI
 
 🧵 In C++:
 
-Read and build frequency map
+- Read and build frequency map
 
-Build Huffman tree with a min-heap
+- Build Huffman tree with a min-heap
 
-Encode and write the compressed data to disk
+- Encode and write the compressed data to disk
 
-✅ Success! File saved in Downloads
+- Success! File saved in Downloads
 
 Decompression Flow:
-User picks .sks file
+- User picks .sks file
 
-Again, pass fd to native C++
+- Again, pass fd to native C++
 
-Decode and reconstruct the original file
+- Decode and reconstruct the original file
 
-All while keeping the memory footprint low and performance high 🧠⚡
+- All while keeping the memory footprint low and performance high 🧠⚡
 
-🧪 Sample Huffman Code (DSA Flex 💪)
+## 🧪 Sample Huffman Code
 cpp
 Copy
 Edit
+```bash
 priority_queue<Node*, vector<Node*>, Compare> pq;
 
 for (auto& [ch, freq] : freqMap) {
@@ -137,9 +139,10 @@ while (pq.size() > 1) {
 
     pq.push(merged);
 }
-✅ Pure DSA. No STL trickery. No libraries. Just logic.
+```
+Pure DSA. No STL trickery. No libraries. Just logic.
 
-🚀 Setup Guide
+## 🚀 Setup Guide
 Clone the repo:
 
 bash
