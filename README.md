@@ -140,8 +140,6 @@ while (pq.size() > 1) {
     pq.push(merged);
 }
 ```
-Pure DSA. No STL trickery. No libraries. Just logic.
-
 ## 🚀 Setup Guide
 Clone the repo:
 
@@ -149,6 +147,7 @@ bash
 Copy
 Edit
 git clone https://github.com/Saksham6395/filecompressor.git
+
 Open in Android Studio
 
 Make sure NDK + CMake are installed
@@ -158,7 +157,10 @@ Build the app
 Run it on a real device (file access needs real storage)
 
 
-🙌 Author
+## 🙌 Author
+
 Saksham Samarth
+
 📍 ECE @ SVNIT
+
 ⚔️ Competitive Programmer | ⚙️ Android Native Dev | 🤖 ML Enthusiast
