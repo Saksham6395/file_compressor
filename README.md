@@ -4,7 +4,8 @@ An Android app that compresses and decompresses `.txt` files using **Huffman Cod
 
 ---
 
-📁 Table of Contents
+# 📁 Table of Contents
+
 📦 What’s This All About?
 
 📲 How to Try the App
