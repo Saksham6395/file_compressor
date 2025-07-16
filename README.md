@@ -12,10 +12,16 @@ An Android app that compresses and decompresses `.txt` files using **Huffman Cod
 
 ---
 
-## 📲 Try It Out
+## 📲 How to Try the App
 
-> Link to APK :
-🎥 [Google Drive](https://drive.google.com/drive/folders/1MjPU8uwgaTjUpJE0Uf-LhGFauMyU8bU9?usp=drive_link)
+Want to give it a spin? Just follow these steps:
+
+1. **Download** the ZIP file from [Google Drive](https://drive.google.com/drive/folders/1MjPU8uwgaTjUpJE0Uf-LhGFauMyU8bU9?usp=drive_link)📦
+2. **Extract** it to get the file: `app-debug.apk`
+3. On your phone, **enable installation from unknown sources** (Settings > Privacy or Security)
+4. **Install the APK**
+5. Open the app, and **compress or decompress** — your choice 🎉
+6. Enjoy compressing or decompressing your files! 🔥
 
 ---
 
