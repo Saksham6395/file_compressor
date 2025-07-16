@@ -41,7 +41,7 @@ An Android app that compresses and decompresses `.txt` files using **Huffman Cod
 
 Want to give it a spin? Just follow these steps:
 
-- [Download the ZIP](https://github.com/Saksham6395/file_compressor/blob/main/app-debug.apk.zip)  from GitHub Releases then right-click the “Download” button on the top right and select “Save link as...” 📦
+- [Download the ZIP](https://github.com/Saksham6395/file_compressor/raw/main/app-debug.apk.zip)  from GitHub Releases then right-click the “Download” button on the top right and select “Save link as...” 📦
 
 - Extract it to get: app-debug.apk
 
