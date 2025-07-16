@@ -4,6 +4,30 @@ An Android app that compresses and decompresses `.txt` files using **Huffman Cod
 
 ---
 
+📁 Table of Contents
+📦 What’s This All About?
+
+📲 How to Try the App
+
+🧠 Why Huffman?
+
+⚙️ Features
+
+🛠️ Tech Stack
+
+📂 Project Structure
+
+🔩 How It Works (Under the Hood)
+
+🧪 Sample Huffman Code
+
+🚀 Setup Guide
+
+🙌 Author
+
+
+---
+
 ## 🚀  What’s This All About?
 - **DSA + Android + Native C++ = 🔥**
 - Compress large `.txt` files directly on your phone  
