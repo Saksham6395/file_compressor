@@ -147,20 +147,27 @@ while (pq.size() > 1) {
 }
 ```
 ## 🚀 Setup Guide
-Clone the repo:
+Follow these steps to build and run the project locally:
 
-bash
-Copy
-Edit
+Clone the repository
+
+1. Clone the repository
+```bash
 git clone https://github.com/Saksham6395/filecompressor.git
+```
+2. Install required components
 
-Open in Android Studio
+3. Make sure NDK and CMake are installed via SDK Manager
 
-Make sure NDK + CMake are installed
+4. Build the app
 
-Build the app
+5. Let Gradle sync the project and complete the build
 
-Run it on a real device (file access needs real storage)
+6. Run on a real Android device
+
+7. The app accesses real file storage (e.g., Downloads), which may not work properly on emulators
+
+
 
 
 ## 🙌 Author
